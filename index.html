@@ -1,110 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-
-    <title>Estructura con Columnas</title>
-    <style>
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #f6f7bd;
-            padding: 10px 20px;
-        }
-
-        /* Estilo para controlar el tamaño fijo del logotipo pequeño */
-        .logo-pequeno {
-            width: 50px;
-            /* Ajusta el tamaño que desees */
-            height: auto;
-            display: block;
-        }
-
-        /* Estilo para que la imagen de la cabecera sea responsiva y no se desborde */
-
-
-        .logo-cabecera {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin-bottom: 15px;
-            /* Espacio entre la imagen y el título */
-        }
-        .boton-nav {
-            text-decoration: none;
-            color: #e2bfff;
-            background-color: bisque;
-            padding: 6px 12px;
-            border-radius: 4px;
-            font-size: 14px;
-            font-family: sans-serif;
-            transition: background-color 0.3s;
-        }    
-        
-        .boton-nav.hover {
-            background-color: #f6f7bd;
-        }
-
-        .boton-navegacion {
-            display: flex;
-            gap: 15px;
-            margin-top: 10px;
-        }
-
-
-        main {
-            display: flex;
-            gap: 20px;
-
-        }
-
-        aside {
-            width: 25%;
-
-            background-color: #ffa7a7;
-            padding: 15px;
-        }
-
-
-        section {
-            width: 75%;
-            background-color: #e2bfff;
-            padding: 15px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huellitas Comunitarias - Inicio</title>
+  <!-- Enlace a la hoja de estilo externa requerida -->
+  <link rel="stylesheet" href="estilo.css">
 </head>
-
 <body>
-    <header>
-        <div>
-            <h1 style="margin: 0;">Mi Sitio Web</h1>
-            <nav>barra de navegacion</nav>
-            <a href="semantica.html" class="boton-nav activo">Inicio</a>
-            <a href="semantica2.html" class="boton-nav">Servicio</a>
-            <a href="semantica3.html" class="boton-nav">Contacto</a>
-        <nav>
-        </div>
-        <img src="logo.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera">
-    </header>
-    <main>
-        <aside>
-            <h3>Barra Lateral</h3>
-            <p>Enlaces, publicidad o categorías.</p>
-        </aside>
-        <section>
-            <article>
-                <h2>Artículo Principal</h2>
-                <p>Contenido del artículo...</p>
-            </article>
-        </section>
-    </main>
 
-    <footer>
-        <p>Pie de página</p>
-    </footer>
+  <!-- Encabezado Principal -->
+  <header>
+    <h1>🐾 Huellitas Comunitarias</h1>
+    <p>Proyecto PAEC</p>
+  </header>
+
+  <!-- Menú de Navegación Semántico con Minúsculas -->
+  <nav>
+    <a href="index.html" class="activo">Inicio</a>
+    <a href="adopciones.html">Adopciones</a>
+    <a href="donaciones.html">Donaciones</a>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    <section class="banner">
+      <h2>El propósito fundamental del Proyecto PAEC es promover la educación, la empatía y la responsabilidad en la comunidad respecto al trato hacia los animales. Buscamos concientizar sobre el cuidado integral, reducir las situaciones de abandono y maltrato, y fomentar acciones concretas que garanticen una convivencia armónica y respetuosa entre la sociedad y la fauna de nuestro entorno.</h2>
+      <p>Buscamos llevar lo aprendido en el aula más allá de las calificaciones, impactando positivamente a nuestra comunidad mediante el rescate y apoyo animal.</p>
+    </section>
+
+    <section class="caja-info">
+      <h2 class="seccion-titulo">El Bienestar Animal</h2>
+      <p>El respeto y el cuidado hacia los animales reflejan los valores de nuestra comunidad. Cada animal es un ser sintiente que merece una vida libre de maltrato, con acceso a un hogar seguro, alimentación adecuada y atención médica. Protegerlos no es solo una responsabilidad, es un acto de empatía y humanidad. Sé la voz de quienes no pueden hablar: adopta con responsabilidad, respeta sus derechos y promueve su bienestar todos los días."</p>
+      <br>
+      <img src="imagenes/perrito.jpg" alt="Mascota rescatada" style="width:100%; max-height:300px; object-fit:cover; border-radius:8px;">
+    </section>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer>
+    <p>&copy; 2026 Huellitas Comunitarias | Proyecto PAEC</p>
+  </footer>
 
 </body>
-
 </html>
